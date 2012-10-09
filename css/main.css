@@ -3,11 +3,14 @@ html, body{
     font-family: 'Open Sans', sans-serif;
     height: 100%;
 }
-#content {
+#container {
     min-height: 100%;
     height: auto !important;
     height: 100%;
     margin: 0 auto -50px;
+}
+#content {
+
 }
 dl{
     margin-top: -110px;
