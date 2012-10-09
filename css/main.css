@@ -1,0 +1,80 @@
+html, body{
+    background-color: #1a1d21;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+#content {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -50px;
+}
+dl{
+    margin-top: -110px;
+    margin-left: -334px;
+    position: absolute;
+    top: 50%; left: 50%;
+}
+dt{
+    color: #fff;
+    font-size: 100px;
+    font-weight: 700;
+    text-align: center;
+    -webkit-animation: 3s ease;
+    -moz-animation: 3s ease;
+    -ms-animation: 3s ease;
+    -o-animation: 3s ease;
+    animation: 3s ease;
+    -webkit-animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    -ms-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+footer, .push {
+    height: 50px;
+}
+footer{
+    background-color: #000;
+}
+#footer-wrap{
+    padding: 13px 20px;
+}
+footer h2{
+    color: #AAAAAA;
+    display: inline;
+    font-size: 17px;
+    font-weight: 100;
+    margin: 0;
+}
+footer h2 img{
+    margin: 0 5px 0 0;
+    vertical-align: bottom;
+}
+footer .twitter-share-button{
+    float: right;
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
