@@ -53,6 +53,7 @@ footer h2 img{
 }
 footer .twitter-share-button{
     float: right;
+    width: 85px;
 }
 @-webkit-keyframes fadeIn {
     0% {opacity: 0;}
