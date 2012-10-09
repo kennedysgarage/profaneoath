@@ -1,2 +1,1 @@
-profaneoath
-===========
+<?php `git pull`;
