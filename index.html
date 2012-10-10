@@ -44,12 +44,26 @@
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div><!--/footer-wrap-->
         </footer>
-
+        
+        <script type="text/template" id="item-template">
+			<div class="">
+				<dt><%= title %></dt>
+				<dd><%= pos %></dd>
+				<dd><%= definition %></dd>
+			</div>
+		</script>
+		
+		<!-- Dependencies -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.2.min.js"><\/script>')</script>
         <script src="js/libs/underscore.js"></script>
         <script src="js/libs/backbone.js"></script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        
+        <!-- Curse Data -->
+        <script src="js/cursedata.js"></script>
+        
+        <!-- Profane Oath main script -->
+        <script src="js/po.js"></script>
     </body>
 </html>
