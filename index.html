@@ -29,9 +29,7 @@
 
         <div id="container">
             <div id="content">
-                <dl>
-                    <dt>Profane Oath</dt>
-                </dl>
+                <dl id="curseHolder"></dl>
             </div><!--/content-->
 
             <div class="push"></div>
@@ -46,7 +44,7 @@
         </footer>
         
         <script type="text/template" id="item-template">
-			<div class="">
+			<div>
 				<dt><%= title %></dt>
 				<dd><%= pos %></dd>
 				<dd><%= definition %></dd>
@@ -61,7 +59,17 @@
         <script src="js/plugins.js"></script>
         
         <!-- Curse Data -->
-        <script src="js/cursedata.js"></script>
+        
+        
+        <!-- Profane Oath backbone specific -->
+        <script src="js/models/curse.js"></script>
+        <script src="js/collections/curses.js"></script>
+        
+        
+        <script src="js/views/curseview.js"></script>
+        <script src="js/views/cursesview.js"></script>
+        
+        
         
         <!-- Profane Oath main script -->
         <script src="js/po.js"></script>

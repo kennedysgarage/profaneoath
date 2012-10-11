@@ -1,11 +1,13 @@
 var po = po || {};
 
-(function() {
+$(function() {
 	'use strict';
+	
 
+	
 	// Curse Model
 	po.Curse = Backbone.Model.extend({
-
+		
 		// Default attributes for each curse word
 		defaults: {
 			title: '',
@@ -14,5 +16,7 @@ var po = po || {};
 		}
 
 	});
+	
+		//console.log(po.Curse);
 
 }());
