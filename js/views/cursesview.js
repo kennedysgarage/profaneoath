@@ -16,7 +16,8 @@ $(function() {
 
 		render: function () {
 			//console.log(this.collection);
-        	var that = this;        	
+        	var that = this;
+	
         	_.each(this.collection.models, function (item){
         		that._renderCurse(item);
         	}, this);

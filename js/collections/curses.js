@@ -26,7 +26,12 @@ $(function() {
 		{title:"beat off",pos:["verb"],definition:""},
 		{title:"blow job",pos:["noun"],definition:""},
 		{title:"boink",pos:["verb"],definition:""},
-		{title:"boner",pos:["noun"],definition:""}
+		{title:"boner",pos:["noun"],definition:""},
+		{title:"brownhole",pos:["noun"],definition:""},
+		{title:"brownie",pos:["noun"],definition:""},
+		{title:"brownfinger",pos:["noun","verb"],definition:""},
+		{title:"bucksnort",pos:["verb"],definition:""},
+		{title:"buddery",pos:["adjective"],definition:""}
 	
 	]);
 	
