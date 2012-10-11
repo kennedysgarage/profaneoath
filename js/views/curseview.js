@@ -13,7 +13,7 @@ $(function() {
 		initialize: function() {
 			this.template = _.template($('#item-template').html());
 			this.render();
-			console.log("model view is working!!");
+			//console.log("model view is working!!");
 		},
 
 		// Re-render the titles of the todo item.
