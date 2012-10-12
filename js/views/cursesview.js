@@ -6,7 +6,7 @@ $(function() {
 	po.CursesView = Backbone.View.extend({
 
 
-		el:  $('#curseHolder'),
+		el:  $('#content'),
 
 		initialize: function() {
 			this.collection = po.Curses;
@@ -14,23 +14,17 @@ $(function() {
 			this.render();
 		},
 
-		render: function () {
-			//console.log(this.collection);
-        	var that = this;
-	
-        	_.each(this.collection.models, function (item){
-        		that._renderCurse(item);
-        	}, this);
-        	
-        	return this;
-        	
-    	},
-    	_renderCurse: function (item) {
-        	var curseView = new po.CurseView({
-            	model: item
-        	});
-        	(this.$el).append(curseView.render().el);
-    	}
+		render : function() {
+
+    	// for each tweet, create a view and prepend it to the list.
+    	po.Curses.each(function(word) {
+      var wordView = new po.CurseView({model:word});
+      $(this.el).html(wordView.render().el);
+    }, this);
+
+    return this;
+  }
+
 
 	});
 	

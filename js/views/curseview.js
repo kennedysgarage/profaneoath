@@ -8,11 +8,11 @@ $(function() {
 	// The DOM element for a curse word...
 	po.CurseView = Backbone.View.extend({
 
-		tagName:  'dt',
+		className: 'curseword',
 
 		initialize: function() {
 			this.template = _.template($('#item-template').html());
-			this.render();
+			//this.render();
 			//console.log("model view is working!!");
 		},
 
