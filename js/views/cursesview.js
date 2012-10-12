@@ -5,7 +5,6 @@ $(function() {
 
 	window.PO.CursesView = Backbone.View.extend({
 
-
 		el:  $('#content'),
 
 		initialize: function() {
@@ -27,4 +26,4 @@ $(function() {
     	}
 	});
 
-});
+}());

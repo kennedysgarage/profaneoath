@@ -4,7 +4,6 @@ $(function() {
 	'use strict';
 
 	// Curse word view
-
 	// The DOM element for a curse word...
 	window.PO.CurseView = Backbone.View.extend({
 	
@@ -25,4 +24,4 @@ $(function() {
 
 	});
 	
-});
+}());
