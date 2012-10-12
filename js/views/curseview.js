@@ -14,7 +14,7 @@ $(function() {
 		className: 'curseword',
 
 		initialize: function() {
-			console.log(this.model);
+			console.log("curseview working");
 		},
 
 		render: function() {
