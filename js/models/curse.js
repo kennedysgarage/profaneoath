@@ -1,10 +1,9 @@
-var po = po || {};
+window.PO = window.PO || {};
 
 $(function() {
 	'use strict';
 	
 	// Curse base model
-	po.Curse = Backbone.Model.extend({});
-	
+	window.PO.Curse = Backbone.Model.extend({});
 
 }());

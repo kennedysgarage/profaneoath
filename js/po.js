@@ -1,5 +1,5 @@
-var po = po || {};
+window.PO = window.PO || {};
 $(function() {
 	// Create the main PO appView.
-	new po.CursesView();
+	new PO.CursesView();
 });

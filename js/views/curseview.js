@@ -1,4 +1,4 @@
-var po = po || {};
+window.PO = window.PO || {};
 
 $(function() {
 	'use strict';
@@ -6,20 +6,20 @@ $(function() {
 	// Curse word view
 
 	// The DOM element for a curse word...
-	po.CurseView = Backbone.View.extend({
+	window.PO.CurseView = Backbone.View.extend({
+	
+		//cache the template for each curse word
+		template: _.template($('#item-template').html()),
 
 		className: 'curseword',
 
 		initialize: function() {
-			this.template = _.template($('#item-template').html());
-			//this.render();
-			//console.log("model view is working!!");
+			console.log(this.model);
 		},
 
-		// Re-render the titles of the todo item.
 		render: function() {
-			var renderedContent = this.template(this.model.toJSON());
-        	(this.$el).html(renderedContent);
+			var cursewords = this.template(this.model.toJSON());
+        	(this.$el).html(cursewords);
         	return this;
 		}
 
