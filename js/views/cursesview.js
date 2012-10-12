@@ -11,7 +11,7 @@ $(function() {
 		initialize: function() {
 			this.collection = new PO.Curses(window.curseData);
 			//this.template = _.template( $('#item-template').html() );
-			//this.render();
+			this.render();
 		},
 
 		render: function() {
