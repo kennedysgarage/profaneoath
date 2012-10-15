@@ -41,11 +41,16 @@ dl{
 }
 dt{
     color: #fff;
-    color: #111;
     font-size: 100px;
     font-weight: 700;
     line-height: 1;
     text-align: left;
+
+    color: #111;
+    background-color: #111;
+}
+dt:hover{
+    background:none;
 }
 dd{
     line-height: 1;
