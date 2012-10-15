@@ -9,11 +9,7 @@ $(function() {
 			"":"home"
 		},
 		
-		home: function(){
-			var $container = $('#container');
-			$container.empty();
-			$container.append(this.libraryView.render().el);
-		}
+		home: function(){}
 	
 	});
 	
