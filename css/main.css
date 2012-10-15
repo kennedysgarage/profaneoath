@@ -46,11 +46,12 @@ dt{
     line-height: 1;
     text-align: left;
 
-    color: #111;
-    background-color: #111;
+    background-color: rgba(0,0,0,0.7);
+    color: #000;
 }
 dt:hover{
     background:none;
+    color: #111;
 }
 dd{
     line-height: 1;
