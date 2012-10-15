@@ -10,8 +10,9 @@ $(function() {
 		className: 'curseword',
 
 		initialize: function() {
+			//_.bindAll(this, "render");
+			//this.model.bind("change", this.render);
 			this.template = _.template($('#item-template').html());
-			console.log("curseview.js file working");
 		},
 
 		render: function() {
