@@ -10,9 +10,15 @@ html, body{
     margin: 0 auto -50px;
 }
 #content {
+    padding: 200px 0 0;
+}
+
+.curseword{
+
 }
 dl{
     margin: 0;
+    padding: 0;
     text-align: center;
 }
 dt{
