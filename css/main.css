@@ -18,13 +18,16 @@ html, body{
     top: 50%;
 }
 dl{
-
+    display: inline-block;
+    margin: 0;
 }
 dt{
     color: #fff;
     color: #111;
     font-size: 100px;
     font-weight: 700;
+    line-height: 1;
+    text-align: left;
     -webkit-animation: 3s ease;
     -moz-animation: 3s ease;
     -ms-animation: 3s ease;
@@ -37,7 +40,9 @@ dt{
     animation-name: fadeIn;
 }
 dd{
-    margin: 0;
+    line-height: 1;
+    margin: 0 0 0 6px;
+    text-align: left;
 }
 footer, .push {
     height: 50px;
