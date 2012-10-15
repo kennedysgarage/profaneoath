@@ -25,5 +25,19 @@ var curseData = [
 		{title:"sharf",pos:["noun","verb"],definition:""},
 		{title:"cock",pos:["noun"],definition:""},
 		{title:"cunt",pos:["noun"],definition:""},
-		{title:"cum dumpster",pos:["noun"],definition:""}
+		{title:"cum dumpster",pos:["noun"],definition:""},
+		{title:"bastard",pos:["noun"],definition:""},
+		{title:"son of a bitch",pos:["noun"],definition:""},
+		{title:"ballsack",pos:["noun"],definition:""},
+		{title:"blow job",pos:["noun"],definition:""},
+		{title:"bollock",pos:["noun"],definition:""},
+		{title:"buttplug",pos:["noun"],definition:""},
+		{title:"dingleberry",pos:["noun"],definition:""},
+		{title:"dick",pos:["noun"],definition:""},
+		{title:"double-fucked",pos:["verb"],definition:""},
+		{title:"douche bag",pos:["noun"],definition:""},
+		{title:"douchey",pos:["adjective"],definition:""},
+		{title:"fuck",pos:["noun","verb"],definition:""},
+		{title:"felch",pos:["verb"],definition:""},
+		{title:"fingerbang",pos:["noun","verb"],definition:""}
 ];
