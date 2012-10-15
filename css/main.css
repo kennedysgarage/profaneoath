@@ -3,6 +3,7 @@ html, body{
     font-family: 'Open Sans', sans-serif;
     height: 100%;
 }
+/* ========================================================= Content ===*/
 #container {
     min-height: 100%;
     height: auto !important;
@@ -16,7 +17,24 @@ html, body{
     right: 0;
     text-align: center;
     top: 50%;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -ms-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    animation-name: fadeIn;
 }
+/* -------
+-- Word --
+------- */
 dl{
     display: inline-block;
     margin: 0;
@@ -28,22 +46,13 @@ dt{
     font-weight: 700;
     line-height: 1;
     text-align: left;
-    -webkit-animation: 3s ease;
-    -moz-animation: 3s ease;
-    -ms-animation: 3s ease;
-    -o-animation: 3s ease;
-    animation: 3s ease;
-    -webkit-animation-name: fadeIn;
-    -moz-animation-name: fadeIn;
-    -ms-animation-name: fadeIn;
-    -o-animation-name: fadeIn;
-    animation-name: fadeIn;
 }
 dd{
     line-height: 1;
     margin: 0 0 0 6px;
     text-align: left;
 }
+/* ========================================================= Footer ===*/
 footer, .push {
     height: 50px;
 }
@@ -66,19 +75,16 @@ footer h2 img{
 }
 footer .twitter-share-button{
     float: right;
-    width: 85px;
+    margin: 5px 0 0px;
+    width: 75px !important;
 }
+/* ========================================================= Animation ===*/
 @-webkit-keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
 
 @-moz-keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-@-ms-keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
