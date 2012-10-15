@@ -8,8 +8,8 @@ $(function() {
 		el:  $('#content'),
 
 		initialize: function() {
-			this.collection = new PO.Curses(window.curseData);
-			//this.template = _.template( $('#item-template').html() );
+			this.collection = new PO.Curses();
+			this.collection.fetch({async:false});
 			this.render();
 		},
 
