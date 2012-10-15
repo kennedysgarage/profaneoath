@@ -3,6 +3,7 @@ html, body{
     font-family: 'Open Sans', sans-serif;
     height: 100%;
 }
+/* ========================================================= Content ===*/
 #container {
     min-height: 100%;
     height: auto !important;
@@ -17,6 +18,9 @@ html, body{
     text-align: center;
     top: 50%;
 }
+/* -------
+-- Word --
+------- */
 dl{
     display: inline-block;
     margin: 0;
@@ -44,6 +48,7 @@ dd{
     margin: 0 0 0 6px;
     text-align: left;
 }
+/* ========================================================= Footer ===*/
 footer, .push {
     height: 50px;
 }
@@ -66,8 +71,10 @@ footer h2 img{
 }
 footer .twitter-share-button{
     float: right;
-    width: 85px;
+    margin: 5px 0 0px;
+    width: 75px !important;
 }
+/* ========================================================= Animation ===*/
 @-webkit-keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
