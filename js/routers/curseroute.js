@@ -9,9 +9,13 @@ $(function() {
 			"":"home"
 		},
 		
-		home: function(){}
+		home: function(){
+			console.log("you're on the home page");
+		}
 	
 	});
 	
+	var poRouter = new PO.CurseRoute();
+	Backbone.history.start();
 	
 }());
