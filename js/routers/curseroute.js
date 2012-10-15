@@ -16,6 +16,6 @@ $(function() {
 	});
 	
 	var poRouter = new PO.CurseRoute();
-	Backbone.history.start();
+	Backbone.history.start({pushState:true});
 	
 }());
