@@ -28,6 +28,7 @@
     <!--[if lt IE 7]><p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p><![endif]-->
 
         <div id="container">
+
             <div id="content"></div><!--/content-->
             <div class="push"></div>
         </div><!--/container-->
@@ -47,6 +48,25 @@
 				<!--<dd><%= definition %></dd>-->
 			</dl>
 		</script>
+
+        <script type="text/template" id="item-new">
+            <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dHZxdG5iTGNfLTU2ZXR5Ni1VQlZPZkE6MQ&amp;ifq" method="POST" id="ss-form">
+                <div class="errorbox-good">
+                    <div class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                            <input type="text" name="entry.0.single" value="" class="ss-q-short" id="entry_0" placeholder="Suggest a new word..." autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" name="pageNumber" value="0">
+                <input type="hidden" name="backupCache" value="">
+                <div class="ss-item ss-navigate">
+                    <div class="ss-form-entry">
+                        <input type="submit" name="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </script>
 
 		<!-- Dependencies -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
