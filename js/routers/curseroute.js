@@ -10,7 +10,7 @@ $(function() {
 		},
 		
 		home: function(){
-			console.log("you're on the home page");
+			console.log("You're now on the home page.");
 		}
 	
 	});

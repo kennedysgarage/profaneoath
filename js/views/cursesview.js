@@ -15,8 +15,10 @@ $(function() {
 
 		render: function() {
 			var that = this,
-        		shuffle = _.shuffle(this.collection.models);
-        	that._renderCurse(this.collection.at(_.random(0, this.collection.length)));
+        		randomCurse = this.collection.at(_.random(0, this.collection.length));
+        	
+        	that._renderCurse(randomCurse);
+        	console.log("Current random curse is: " + randomCurse.get("title") + "!");
         	return this;
     	},
     	
