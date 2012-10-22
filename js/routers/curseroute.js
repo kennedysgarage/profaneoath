@@ -14,11 +14,15 @@ $(function() {
 			this.oathView = new PO.CursesView({
 				collection: window.library
 			});
-			console.log("Initializing router....done.");
+			console.log("Initializing router, creating the collection view....done.");
 		},
 		
 		home: function(){
-			console.log("Verifying location....currently on the home page.");
+			var $home = $('#container');
+				$home.empty();
+				$home.append(this.oathView.render().el);
+			
+			console.log("Clearing elements....HTML appened. You are currently on the home page, enjoy.");
 		}
 	
 	});
