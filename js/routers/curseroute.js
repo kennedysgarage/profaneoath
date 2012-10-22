@@ -9,8 +9,16 @@ $(function() {
 			"":"home"
 		},
 		
+		initialize: function (){
+			
+			this.oathView = new PO.CursesView({
+				collection: window.library
+			});
+			console.log("Initializing router....done.");
+		},
+		
 		home: function(){
-			console.log("You're now on the home page.");
+			console.log("Verifying location....currently on the home page.");
 		}
 	
 	});
