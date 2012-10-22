@@ -2,7 +2,7 @@ window.PO = window.PO || {};
 
 $(function() {
 	'use strict';
-	
+	 
 	window.PO.CurseRoute = Backbone.Router.extend({
 	
 		routes: {
@@ -14,7 +14,7 @@ $(function() {
 			this.oathView = new PO.CursesView({
 				collection: window.library
 			});
-			console.log("Initializing router, creating the collection view....done.");
+			console.log("Initializing router, creating collection view....done.");
 		},
 		
 		home: function(){
@@ -22,7 +22,7 @@ $(function() {
 				$home.empty();
 				$home.append(this.oathView.render().el);
 			
-			console.log("Clearing elements....HTML appened. You are currently on the home page, enjoy.");
+			console.log("Clearing elements....view appended. You are on the home page, enjoy.");
 		}
 	
 	});

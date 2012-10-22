@@ -7,7 +7,7 @@ $(function() {
 	// The DOM element for a curse word...
 	window.PO.CurseView = Backbone.View.extend({
 	
-		className: 'curseword',
+		className: 'curseview',
 
 		initialize: function() {
 			//_.bindAll(this, "render");
