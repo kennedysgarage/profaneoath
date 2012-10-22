@@ -20,7 +20,5 @@ $(function() {
 			return curseData.get('title');
 		}
 	});
-		
-	window.library = new PO.Curses();
 	
 }());

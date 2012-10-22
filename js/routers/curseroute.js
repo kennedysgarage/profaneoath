@@ -10,11 +10,8 @@ $(function() {
 		},
 		
 		initialize: function (){
-			
-			this.oathView = new PO.CursesView({
-				collection: window.library
-			});
-			console.log("Initializing router, creating collection view....done.");
+			this.oathView = new PO.CursesView({});
+			console.log("Initializing router, creating oath collection....done.");
 		},
 		
 		home: function(){
@@ -22,7 +19,7 @@ $(function() {
 				$home.empty();
 				$home.append(this.oathView.render().el);
 			
-			console.log("Clearing elements....view appended. You are on the home page, enjoy.");
+			console.log("Clearing elements....oath view appended. You are on the home page, enjoy.");
 		}
 	
 	});

@@ -10,7 +10,6 @@ $(function() {
 		initialize: function() {
 			this.collection = new PO.Curses();
 			this.collection.fetch({async:false});
-			//this.render();
 		},
 
 		render: function() {
