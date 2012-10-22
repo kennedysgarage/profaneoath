@@ -10,9 +10,10 @@ $(function() {
 		className: 'curseview',
 
 		initialize: function() {
-			//_.bindAll(this, "render");
-			//this.model.bind("change", this.render);
+			_.bindAll(this, "render");
+			this.model.bind("change", this.render);
 			this.template = _.template($('#item-template').html());
+			console.log("curseview initialized");
 		},
 
 		render: function() {
