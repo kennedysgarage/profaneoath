@@ -2,6 +2,8 @@ window.PO = window.PO || {};
 
 $(function() {
 	'use strict';
-	// Curse base model
+	
+	//Curse model
 	window.PO.Curse = Backbone.Model.extend({});
+	
 }());

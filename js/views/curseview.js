@@ -3,17 +3,16 @@ window.PO = window.PO || {};
 $(function() {
 	'use strict';
 
-	// Curse word view
-	// The DOM element for a curse word...
+	//Curse model view
 	window.PO.CurseView = Backbone.View.extend({
 	
 		className: 'curseview',
+		
+		template: _.template($('#item-template').html()),
 
 		initialize: function() {
 			_.bindAll(this, "render");
 			this.model.bind("change", this.render);
-			this.template = _.template($('#item-template').html());
-			console.log("curseview initialized");
 		},
 
 		render: function() {
