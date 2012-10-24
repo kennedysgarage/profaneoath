@@ -10,11 +10,11 @@ $(function() {
 		
 		url: "js/cursedata.json",
 		
-		parse: function(response){
+		parse: function(response) {
 			return response;
 		},
 
-		comparator: function( curseData ) {
+		comparator: function(curseData) {
 			return curseData.get('title');
 		}
 	});

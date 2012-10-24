@@ -10,14 +10,14 @@ $(function() {
 			"":'home'
 		},
 		
-		initialize: function (){
+		initialize: function() {
 			this.oathView = new PO.CursesView({});
 		},
 		
-		home: function(){
+		home: function() {
 			var $home = $('#container');
-				$home.empty();
-				$home.append(this.oathView.render().el);			
+			$home.empty();
+			$home.append(this.oathView.render().el);			
 		}
 	
 	});
