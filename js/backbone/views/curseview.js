@@ -11,8 +11,8 @@ $(function() {
 		template: _.template($('#item-template').html()),
 
 		initialize: function() {
-			_.bindAll(this, "render");
-			this.model.bind("change", this.render);
+			_.bindAll(this, 'render');
+			//this.model.bind("change", this.render);
 		},
 
 		render: function() {

@@ -7,7 +7,7 @@ $(function() {
 	window.PO.CurseRoute = Backbone.Router.extend({
 	
 		routes: {
-			"":"home"
+			"":'home'
 		},
 		
 		initialize: function (){
