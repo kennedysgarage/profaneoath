@@ -11,7 +11,7 @@ $(function() {
 		template: _.template($('#item-new').html()),
 
 		initialize: function() {
-
+			console.log("newitemview init");
 		},
 
 		render: function() {
