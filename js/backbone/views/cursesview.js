@@ -26,9 +26,14 @@ $(function() {
     	},
     	
     	populate: function() {
-    		var $home = $('#container');
-			$home.empty();
-			$home.append(this.render().el);	
+    		var $el = $('#container');
+			$el.empty();
+			$el.append(this.render().el);	
+		},
+		
+		clear: function(){
+			var $el = $('#container');
+			$el.empty();
 		}
 	});
 
