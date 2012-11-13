@@ -23,7 +23,13 @@ $(function() {
     	_renderCurse: function(item) {
         	var curseView = new PO.CurseView({model:item});
         	$(this.el).html(curseView.render().el);
-    	}
+    	},
+    	
+    	populate: function() {
+    		var $home = $('#container');
+			$home.empty();
+			$home.append(this.render().el);	
+		}
 	});
 
 }());
