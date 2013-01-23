@@ -7,6 +7,10 @@ $(function() {
 
 		model: PO.Curse,
 		
+		initialize: function (){
+			console.log("curses collection intialized");
+		},
+		
 		url: "js/cursedata.json",
 		
 		parse: function(response) {
