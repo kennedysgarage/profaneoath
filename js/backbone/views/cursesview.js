@@ -7,7 +7,7 @@ $(function() {
 		el:  $('#content'),
 		
 		events: {
-			'click a#newitemlink':'_testNewItem'
+			'click footer div#footer-wrap span a#newitemlink':'_newItemForm'
 		},
 
 		initialize: function() {
@@ -18,7 +18,6 @@ $(function() {
 		render: function() {
 			var randomCurse = this.collection.at(_.random(0, this.collection.length));
         	console.log(randomCurse.get('title'));
-        	this.newItem = new PO.NewItemView();
         	this._renderCurse(randomCurse);
         	return this;
     	},
@@ -28,10 +27,8 @@ $(function() {
         	$(this.el).html(curseView.render().el);
     	},
     	
-    	_testNewItem: function (e) {
+    	_newItemForm: function (e) {
     		e.preventDefault;
-    		this.clear;
-    		this.newItem();
     		console.log("new item click working");
     	},
     	
