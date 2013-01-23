@@ -6,7 +6,7 @@ $(function() {
 	//New Item view
 	window.PO.NewItemView = Backbone.View.extend({
 	
-		el:  $('#content'),
+		el:  $('footer'),
 		
 		template: _.template($('#item-new').html()),
 

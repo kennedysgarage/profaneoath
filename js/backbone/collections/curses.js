@@ -1,5 +1,4 @@
 window.PO = window.PO || {};
-
 $(function() {
 	'use strict';
 
@@ -11,6 +10,7 @@ $(function() {
 		url: "js/cursedata.json",
 		
 		parse: function(response) {
+			//console.log(response);
 			return response;
 		},
 

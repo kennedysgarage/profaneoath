@@ -1,5 +1,4 @@
 window.PO = window.PO || {};
-
 $(function() {
 	'use strict';
 
@@ -12,7 +11,6 @@ $(function() {
 
 		initialize: function() {
 			_.bindAll(this, 'render');
-			//this.model.bind("change", this.render);
 		},
 
 		render: function() {
