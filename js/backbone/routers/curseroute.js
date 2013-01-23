@@ -7,7 +7,7 @@ $(function() {
 	window.PO.CurseRoute = Backbone.Router.extend({
 	
 		routes: {
-			'':'home',
+			'':'home'
 		},
 		
 		initialize: function() {
@@ -17,8 +17,9 @@ $(function() {
 		home: function() {
 			var kickoff = new PO.CursesView();
 			kickoff.populate();
+			//this.navigate();
 		}
-	
+		
 	});
 	
 	var poRouter = new PO.CurseRoute();

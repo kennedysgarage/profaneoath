@@ -7,7 +7,7 @@ $(function() {
 		el:  $('#content'),
 		
 		events: {
-			'click footer div#footer-wrap span a#newitemlink':'_newItemForm'
+			'click #newitemlink':'_newItemForm'
 		},
 
 		initialize: function() {
