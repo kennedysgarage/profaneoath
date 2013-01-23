@@ -10,12 +10,13 @@ $(function() {
 		template: _.template($('#item-template').html()),
 
 		initialize: function() {
-			_.bindAll(this, 'render');
+			console.log('curse view initialized');
 		},
 
 		render: function() {
-			var cursewords = this.template(this.model.toJSON());
-        	$(this.el).html(cursewords);
+			var curseViewHTML = this.template(this.model.toJSON());
+        	$(this.el).html(curseViewHTML);
+        	//console.log(curseViewHTML);
         	return this;
 		}
 
