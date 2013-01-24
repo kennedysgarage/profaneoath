@@ -22,8 +22,8 @@ $(function() {
         	return this;
     	},
     	
-    	_renderCurse: function(item) {
-        	var curseView = new PO.CurseView({model:item});
+    	_renderCurse: function(m) {
+        	var curseView = new PO.CurseView({model:m});
         	$(this.el).html(curseView.render().el);
     	},
     	
