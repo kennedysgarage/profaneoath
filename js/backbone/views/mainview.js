@@ -15,11 +15,11 @@ $(function() {
 		render: function() {
 			var randomCurse = this.collection.at(_.random(0, this.collection.length));
         	console.log("profane oath: " + randomCurse.get('title'));
-        	this._renderCurse(randomCurse);
+        	this._displayCurse(randomCurse);
         	return this;
     	},
     	
-    	_renderCurse: function(m) {
+    	_displayCurse: function(m) {
         	var curseView = new PO.CurseView({model:m});
         	$(this.el).html(curseView.render().el);
     	},
