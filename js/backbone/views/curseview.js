@@ -16,7 +16,6 @@ $(function() {
 		render: function() {
 			var curseViewHTML = this.template(this.model.toJSON());
         	$(this.el).html(curseViewHTML);
-        	//console.log(curseViewHTML);
         	return this;
 		}
 

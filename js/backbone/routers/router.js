@@ -23,7 +23,7 @@ $(function() {
 		
 		_newItem: function() {
 			console.log("working");
-			$('#content').html(this.newItemView.render().el);
+			//$('#content').html(this.newItemView.render().el);
 		}
 		
 	});
