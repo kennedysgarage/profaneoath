@@ -11,16 +11,8 @@ $(function() {
 			//console.log("curses collection initialized...");
 		},
 		
-		url: "js/cursedata.json",
+		url: "js/cursedata.json"
 		
-		parse: function(response) {
-			//console.log(response);
-			return response;
-		},
-
-		comparator: function(curseData) {
-			return curseData.get('title');
-		}
 	});
 	
 }());
