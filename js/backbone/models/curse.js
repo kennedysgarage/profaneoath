@@ -6,7 +6,6 @@ $(function() {
 	window.PO.Curse = Backbone.Model.extend({
 	
 		initialize: function () {
-			//console.log(this.get('title'));
 			//console.log(this.urlRoot + this.get('title'));
 		},
 		

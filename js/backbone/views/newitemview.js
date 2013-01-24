@@ -5,17 +5,15 @@ $(function() {
 
 	//New Item view
 	window.PO.NewItemView = Backbone.View.extend({
-	
-		className: 'newitemview',
-					
+						
 		template: _.template($('#item-new').html()),
 
 		initialize: function() {
-			console.log("newitemview initialized...");
+			//console.log(this.template());
+			//console.log("newitemview initialized...");
 		},
 
 		render: function() {
-			var form = this.template();
         	$(this.el).html(form);
         	return this;
 		}

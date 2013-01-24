@@ -9,7 +9,7 @@ $(function() {
 		initialize: function() {
 			this.collection = new PO.Curses();
 			this.collection.fetch({async:false});
-			console.log("main view initialized...");
+			//console.log("main view initialized...");
 		},
 
 		render: function() {
