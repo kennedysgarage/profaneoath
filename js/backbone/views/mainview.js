@@ -2,22 +2,19 @@ window.PO = window.PO || {};
 $(function() {
 	'use strict';
 	
-	window.PO.CursesView = Backbone.View.extend({
+	window.PO.MainView = Backbone.View.extend({
 
 		el:  $('#content'),
-		
-		events: {
-			'click #newitemlink':'_newItemForm'
-		},
 
 		initialize: function() {
 			this.collection = new PO.Curses();
 			this.collection.fetch({async:false});
+			console.log("main view initialized...");
 		},
 
 		render: function() {
 			var randomCurse = this.collection.at(_.random(0, this.collection.length));
-        	console.log(randomCurse.get('title'));
+        	console.log("profane oath: " + randomCurse.get('title'));
         	this._renderCurse(randomCurse);
         	return this;
     	},
@@ -26,12 +23,7 @@ $(function() {
         	var curseView = new PO.CurseView({model:m});
         	$(this.el).html(curseView.render().el);
     	},
-    	
-    	_newItemForm: function (e) {
-    		e.preventDefault;
-    		console.log("new item click working");
-    	},
-    	
+    	    	
     	populate: function() {
     		var $el = $('#container');
 			$el.empty();

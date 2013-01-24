@@ -8,7 +8,7 @@ $(function() {
 		model: PO.Curse,
 		
 		initialize: function (){
-			console.log("curses collection intialized");
+			//console.log("curses collection initialized...");
 		},
 		
 		url: "js/cursedata.json",

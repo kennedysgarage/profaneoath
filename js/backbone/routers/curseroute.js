@@ -11,11 +11,11 @@ $(function() {
 		},
 		
 		initialize: function() {
-			console.log("router init");
+			console.log("router initialized...");
 		},
 		
 		home: function() {
-			var kickoff = new PO.CursesView();
+			var kickoff = new PO.MainView();
 			kickoff.populate();
 			//this.navigate();
 		}

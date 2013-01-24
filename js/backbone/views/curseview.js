@@ -10,7 +10,7 @@ $(function() {
 		template: _.template($('#item-template').html()),
 
 		initialize: function() {
-			console.log('curse view initialized');
+			//console.log('curse model view initialized...');
 		},
 
 		render: function() {
