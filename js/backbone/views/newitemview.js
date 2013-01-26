@@ -14,21 +14,10 @@ $(function() {
 		},
 
 		render: function() {
-        	$(this.el).html(form);
+        	$(this.el).html(this.template());
         	return this;
-		},
-		
-		populate: function() {
-    		var $el = $('#container');
-			$el.empty();
-			$el.append(this.render().el);	
-		},
-		
-		clear: function(){
-			var $el = $('#container');
-			$el.empty();
 		}
-
+		
 	});
 	
 }());

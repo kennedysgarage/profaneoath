@@ -24,7 +24,6 @@ $(function() {
 		
 		_newItem: function() {
 			console.log("_newItem working");
-			this.newItemView.populate();
 		}
 		
 	});
