@@ -1,6 +1,6 @@
 window.PO = window.PO || {};
 $(function() {
-	'use strict';
+	//'use strict';
 
 	//Curses collection
 	window.PO.Curses = Backbone.Collection.extend({

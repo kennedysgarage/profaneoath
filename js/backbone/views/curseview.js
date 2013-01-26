@@ -1,6 +1,6 @@
 window.PO = window.PO || {};
 $(function() {
-	'use strict';
+	//'use strict';
 
 	//Curse model view
 	window.PO.CurseView = Backbone.View.extend({

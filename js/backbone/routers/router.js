@@ -1,7 +1,7 @@
 window.PO = window.PO || {};
 
 $(function() {
-	'use strict';
+	//'use strict';
 	
 	//Router
 	window.PO.CurseRoute = Backbone.Router.extend({
@@ -14,16 +14,17 @@ $(function() {
 		initialize: function() {
 			this.mainView = new PO.MainView();
 			this.newItemView = new PO.NewItemView();
-			//console.log("router intitialized...");
+			console.log("router intitialized...");
 		},
 		
 		_home: function() {
+			console.log("_home working");
 			this.mainView.populate();
 		},
 		
 		_newItem: function() {
-			console.log("working");
-			//$('#content').html(this.newItemView.render().el);
+			console.log("_newItem working");
+			this.newItemView.populate();
 		}
 		
 	});

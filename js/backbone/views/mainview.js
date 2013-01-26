@@ -1,6 +1,6 @@
 window.PO = window.PO || {};
 $(function() {
-	'use strict';
+	//'use strict';
 	
 	window.PO.MainView = Backbone.View.extend({
 
@@ -14,7 +14,7 @@ $(function() {
 
 		render: function() {
 			var randomCurse = this.collection.at(_.random(0, this.collection.length));
-        	console.log("profane oath: " + randomCurse.get('title'));
+        	//console.log("profane oath: " + randomCurse.get('title'));
         	this._displayCurse(randomCurse);
         	return this;
     	},
