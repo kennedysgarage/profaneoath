@@ -34,8 +34,8 @@
 
         <footer>
             <div id="footer-wrap">
-                <h2><img src="img/logo.png"/> Profane Oath</h2>
-                <span><a href="" id="newitemlink" class="btn">Suggest A Curse</a></span>
+                <h2><img src="img/logo.png"/> <a href="" style="color:white;">Profane Oath</a></h2>
+                <span><a href="" id="newitemlink" class="btn">Suggest An Oath</a></span>
                 <a href="https://twitter.com/share" class="twitter-share-button" data-via="profaneoat">Tweet</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div><!--/footer-wrap-->
@@ -45,7 +45,7 @@
         	<dl>
 				<dt><%= title %></dt>
 				<dd><%= pos %></dd>
-				<!--<dd><%= definition %></dd>-->
+				<dd><%= definition %></dd>
 			</dl>
 		</script>
 
@@ -79,8 +79,8 @@
         <script src="js/backbone/models/curse.js"></script>
         <script src="js/backbone/collections/curses.js"></script>
         <script src="js/backbone/views/curseview.js"></script>
-        <script src="js/backbone/views/cursesview.js"></script>
+        <script src="js/backbone/views/mainview.js"></script>
         <script src="js/backbone/views/newitemview.js"></script>
-        <script src="js/backbone/routers/curseroute.js"></script>
+        <script src="js/backbone/routers/router.js"></script>
     </body>
 </html>

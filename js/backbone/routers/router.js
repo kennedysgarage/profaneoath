@@ -1,27 +1,17 @@
 window.PO = window.PO || {};
-
 $(function() {
-	'use strict';
-	
-	//Router
 	window.PO.CurseRoute = Backbone.Router.extend({
-	
 		routes: {
-			'':'home',
+			'':'_home'
 		},
-		
 		initialize: function() {
-			console.log("router init");
+			this.mainView = new PO.MainView();
+			this.newItemView = new PO.NewItemView();
 		},
-		
-		home: function() {
-			var kickoff = new PO.CursesView();
-			kickoff.populate();
+		_home: function() {
+			this.mainView.populate();
 		}
-	
 	});
-	
 	var poRouter = new PO.CurseRoute();
 	Backbone.history.start({pushState:true});
-	
 }());

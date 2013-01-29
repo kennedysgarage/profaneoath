@@ -1,40 +1,21 @@
 window.PO = window.PO || {};
 $(function() {
-	'use strict';
-	
-	window.PO.CursesView = Backbone.View.extend({
-
+	window.PO.MainView = Backbone.View.extend({
 		el:  $('#content'),
-		
-		events: {
-			'click a#newitemlink':'_testNewItem'
-		},
-
 		initialize: function() {
 			this.collection = new PO.Curses();
 			this.collection.fetch({async:false});
 		},
-
 		render: function() {
 			var randomCurse = this.collection.at(_.random(0, this.collection.length));
-        	console.log(randomCurse.get('title'));
-        	this.newItem = new PO.NewItemView();
-        	this._renderCurse(randomCurse);
+        	console.log("profane oath: " + randomCurse.get('title'));
+        	this._displayCurse(randomCurse);
         	return this;
     	},
-    	
-    	_renderCurse: function(item) {
-        	var curseView = new PO.CurseView({model:item});
+    	_displayCurse: function(m) {
+        	var curseView = new PO.CurseView({model:m});
         	$(this.el).html(curseView.render().el);
     	},
-    	
-    	_testNewItem: function (e) {
-    		e.preventDefault;
-    		this.clear;
-    		this.newItem();
-    		console.log("new item click working");
-    	},
-    	
     	populate: function() {
     		var $el = $('#container');
 			$el.empty();

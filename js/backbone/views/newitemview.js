@@ -1,25 +1,19 @@
 window.PO = window.PO || {};
-
 $(function() {
-	'use strict';
-
-	//New Item view
 	window.PO.NewItemView = Backbone.View.extend({
-	
-		el:  $('footer'),
-		
-		template: _.template($('#item-new').html()),
-
-		initialize: function() {
-			console.log("newitemview init");
+		el: $('footer'),
+		events:{
+			"click #newitemlink":"_suggestForm"
 		},
-
+		template: _.template($('#item-new').html()),
+		_suggestForm: function (e) {
+			e.preventDefault();
+			this.render().el;
+			console.log('clicking newitemlink works');
+		},
 		render: function() {
-			var form = this.template();
-        	$(this.el).html(form);
+        	$('#container').html(this.template());
         	return this;
 		}
-
 	});
-	
 }());
