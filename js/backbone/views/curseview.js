@@ -4,8 +4,7 @@ $(function() {
 		className: 'curseview',		
 		template: _.template($('#item-template').html()),
 		render: function() {
-			var curseViewHTML = this.template(this.model.toJSON());
-        	$(this.el).html(curseViewHTML);
+        	$(this.el).html(this.template(this.model.toJSON()));
         	return this;
 		}
 	});
