@@ -40,7 +40,6 @@ dl{
     margin: 0;
 }
 dt{
-    color: #fff;
     font-size: 100px;
     font-weight: 700;
     line-height: 1;
@@ -53,6 +52,21 @@ dt{
 dt:hover{
     background:none;
     color: #111;
+}
+/*.safe{
+    background-color: rgba(0,0,0,0.7);
+    color: #000;
+}
+.safe:hover{
+    background:none;
+    color: #111;
+}*/
+.nsfw{
+    background:none;
+    color: #fff;
+}
+.nsfw:hover{
+    color: #fff
 }
 dd{
     line-height: 1;
@@ -97,6 +111,15 @@ dd{
     background-color: #22262b;
     color: #aaa;
 }
+.ss-item a{
+    color: #2f343d;
+    display: block;
+    font-size: 10px;
+    margin: 5px auto 0;
+    text-align: right;
+    text-decoration: underline;
+    width: 316px;
+}
 #ss-form input[type="text"]:-moz-placeholder {
     color: rgba(26,143,198,0.4);
 }
@@ -113,6 +136,9 @@ footer{
 #footer-wrap{
     padding: 13px 20px;
 }
+footer #logo{
+    display: inline-block;
+}
 footer h2{
     color: #AAAAAA;
     display: inline;
@@ -123,6 +149,13 @@ footer h2{
 footer h2 img{
     margin: 0 5px 0 0;
     vertical-align: bottom;
+}
+footer #mode{
+    color: #666666;
+    display: inline;
+    font-size: 10px;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 footer #actions{
     float: right;
