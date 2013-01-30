@@ -36,7 +36,7 @@
             <div id="footer-wrap">
                 <div id="logo">
                     <h2><img src="img/logo.png"/> <a href="" style="color:white;">Profane Oath</a></h2>
-                        <a href="#" id="mode">Safe</a>
+                        <a href="#" id="mode">Change viewing mode</a>
                 </div><!--/logo-->
                 <div id="actions">
                     <span><a href="" id="newitemlink" class="btn">Suggest An Oath</a></span>
@@ -87,9 +87,9 @@
         });
 
         $("#mode").toggle(function (){
-            $(this).text("NSFW")
+            $(this).text("You are now viewing in NSFW mode.")
         }, function(){
-            $(this).text("SAFE")
+            $(this).text("You are now viewing in SAFE mode.")
         });
 
         </script>
