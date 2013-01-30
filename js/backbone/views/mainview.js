@@ -5,11 +5,11 @@ $(function() {
 		initialize: function() {
 			this.collection = new PO.Curses();
 			this.collection.fetch({async:false});
+			this.randomCurse = this.collection.at(_.random(0, this.collection.length));
 		},
-		render: function() {
-			var randomCurse = this.collection.at(_.random(0, this.collection.length));
-        	console.log("profane oath: " + randomCurse.get('title'));
-        	this._displayCurse(randomCurse);
+		render: function() { 
+        	console.log("profane oath: " + this.randomCurse.get('title'));
+        	this._displayCurse(this.randomCurse);
         	return this;
     	},
     	_displayCurse: function(m) {

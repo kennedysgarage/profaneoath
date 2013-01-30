@@ -10,6 +10,8 @@ $(function() {
 		},
 		_home: function() {
 			this.mainView.populate();
+			//console.log(this.mainView.randomCurse.get('title'));
+			//this.navigate("/" + this.mainView.randomCurse.get('title'));
 		}
 	});
 	var poRouter = new PO.CurseRoute();
