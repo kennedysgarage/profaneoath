@@ -10,7 +10,7 @@ $(function() {
 		},
 		_home: function() {
 			this.mainView.populate();
-			//console.log(this.mainView.randomCurse.get('title'));
+			console.log(this.mainView.randomCurse.get('title').replace(/\W/g, ''));
 			//this.navigate("/" + this.mainView.randomCurse.get('title'));
 		}
 	});
