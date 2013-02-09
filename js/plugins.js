@@ -1,4 +1,4 @@
-// Avoid `console` errors in browsers that lack a console.
+//avoid `console` errors in browsers that lack a console
 if (!(window.console && console.log)) {
     (function() {
         var noop = function() {};
@@ -10,3 +10,7 @@ if (!(window.console && console.log)) {
         }
     }());
 }
+
+//safe mode toggling - to be removed when finished(?)
+$("#mode").click(function(){$('dt').toggleClass("nsfw");});
+$("#mode").toggle(function (){$(this).text("You are now viewing in NSFW mode.")}, function(){$(this).text("You are now viewing in SAFE mode.")});
