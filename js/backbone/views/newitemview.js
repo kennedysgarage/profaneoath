@@ -9,7 +9,6 @@ $(function() {
 		_suggestForm: function (e) {
 			e.preventDefault();
 			this.render().el;
-			console.log('clicking newitemlink works');
 		},
 		render: function() {
         	$('#container').html(this.template());
