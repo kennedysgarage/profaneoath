@@ -7,11 +7,12 @@ $(function() {
 		initialize: function() {
 			this.mainView = new PO.MainView();
 			this.newItemView = new PO.NewItemView();
+			this.urlCreator = this.mainView.randomCurse.get('title').replace(/\W/g, '');
+			console.log(this.urlCreator);
 		},
 		_home: function() {
 			this.mainView.populate();
-			console.log(this.mainView.randomCurse.get('title').replace(/\W/g, ''));
-			//this.navigate("/" + this.mainView.randomCurse.get('title'));
+			this.navigate(this.urlCreator, {trigger:true});
 		}
 	});
 	var poRouter = new PO.CurseRoute();

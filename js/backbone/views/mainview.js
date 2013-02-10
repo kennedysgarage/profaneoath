@@ -8,7 +8,7 @@ $(function() {
 			this.randomCurse = this.collection.at(_.random(0, this.collection.length));
 		},
 		render: function() { 
-        	console.log("profane oath: " + this.randomCurse.get('title'));
+        	//console.log("profane oath: " + this.randomCurse.get('title'));
         	this._displayCurse(this.randomCurse);
         	return this;
     	},
