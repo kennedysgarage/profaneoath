@@ -15,7 +15,7 @@ $(function() {
 		}
 	});
 	var poRouter = new PO.CurseRoute();
-	poRouter.on('route:_home', function () {
+	poRouter.on('route:_populatePage', function () {
 		this.navigate(poRouter.urlCreator, {trigger:true});
 	});
 	Backbone.history.start({pushState:true});
