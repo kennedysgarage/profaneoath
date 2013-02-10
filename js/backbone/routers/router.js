@@ -2,21 +2,24 @@ window.PO = window.PO || {};
 $(function() {
 	window.PO.CurseRoute = Backbone.Router.extend({
 		routes: {
-			'*actions':'_populatePage'
+			'':'_home',
+			':title':'_populatePage'
 		},
 		initialize: function() {
 			this.mainView = new PO.MainView();
 			this.newItemView = new PO.NewItemView();
 			this.urlCreator = this.mainView.randomCurse.get('title').replace(/\W/g, '');
-			console.log(this.urlCreator);
+			
 		},
-		_populatePage: function() {
+		_home: function () {
+			this.navigate(this.urlCreator, {trigger:true});
+		},
+		_populatePage: function(title) {
 			this.mainView.populate();
+			//console.log(title);
 		}
 	});
 	var poRouter = new PO.CurseRoute();
-	poRouter.on('route:_populatePage', function () {
-		this.navigate(poRouter.urlCreator, {trigger:true});
-	});
+
 	Backbone.history.start({pushState:true});
 }());

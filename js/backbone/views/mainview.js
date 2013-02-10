@@ -5,7 +5,8 @@ $(function() {
 		initialize: function() {
 			this.collection = new PO.Curses();
 			this.collection.fetch({async:false});
-			this.randomCurse = this.collection.at(_.random(0, this.collection.length));
+			var randy = _.random(0, this.collection.length);
+			this.randomCurse = this.collection.at(_.random(randy));
 		},
 		render: function() { 
         	this._displayCurse(this.randomCurse);
@@ -19,11 +20,6 @@ $(function() {
     		var $el = $('#container');
 			$el.empty();
 			$el.append(this.render().el);	
-		},
-		
-		clear: function(){
-			var $el = $('#container');
-			$el.empty();
 		}
 	});
 }());
