@@ -5,8 +5,8 @@ $(function() {
 		initialize: function() {
 			this.collection = new PO.Curses();
 			this.collection.fetch({async:false});
-			var randy = _.random(0, this.collection.length);
-			this.randomCurse = this.collection.at(_.random(randy));
+			this.randy = _.random(0, this.collection.length);
+			this.randomCurse = this.collection.at(this.randy);
 		},
 		render: function() { 
         	this._displayCurse(this.randomCurse);
@@ -17,6 +17,7 @@ $(function() {
         	$(this.el).html(curseView.render().el);
     	},
     	populate: function() {
+    		console.log(this.collection.at(this.randy));
     		var $el = $('#container');
 			$el.empty();
 			$el.append(this.render().el);

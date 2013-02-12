@@ -2,12 +2,13 @@ window.PO = window.PO || {};
 $(function() {
 	window.PO.CurseRoute = Backbone.Router.extend({
 		routes: {
-			'':'_home'		
+			'':'_home',
+			'*word':'_handleRoute'	
 		},
 		initialize: function() {
 			this.mainView = new PO.MainView();
 			this.newItemView = new PO.NewItemView();
-			this.urlCreator = this.mainView.randomCurse.get('title').replace(/\W/g, '').toLowerCase();
+			this.urlCreator = '' + this.mainView.randomCurse.get('title').replace(/\W/g, '').toLowerCase();
 			this.mainView.randomCurse.set('urlName',this.urlCreator);
 			console.log(this.mainView.randomCurse.toJSON());
 		},
@@ -15,6 +16,9 @@ $(function() {
 			//this.navigate(this.urlCreator, {trigger:true});
 			//this._populatePage();
 			this.mainView.populate();
+		},
+		_handleRoute: function (word) {
+			alert(word);
 		}
 	});
 	PO.router = new PO.CurseRoute();
