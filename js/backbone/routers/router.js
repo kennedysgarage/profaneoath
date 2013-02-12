@@ -7,7 +7,7 @@ $(function() {
 		initialize: function() {
 			this.mainView = new PO.MainView();
 			this.newItemView = new PO.NewItemView();
-			this.urlCreator = this.mainView.randomCurse.get('title').replace(/\W/g, '');
+			this.urlCreator = this.mainView.randomCurse.get('title').replace(/\W/g, '').toLowerCase();
 			this.mainView.randomCurse.set('urlName',this.urlCreator);
 			console.log(this.mainView.randomCurse.toJSON());
 		},
@@ -18,12 +18,10 @@ $(function() {
 		}
 	});
 	PO.router = new PO.CurseRoute();
-/*
 	PO.router.bind("all",function(route) {
 		//console.log("PO router");
     	console.log(route);
 	});
-*/
 
 	Backbone.history.start({pushState:true});
 }());
