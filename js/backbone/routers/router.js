@@ -18,10 +18,12 @@ $(function() {
 		}
 	});
 	PO.router = new PO.CurseRoute();
+/*
 	PO.router.bind("all",function(route) {
 		//console.log("PO router");
     	console.log(route);
 	});
+*/
 
 	Backbone.history.start({pushState:true});
 }());

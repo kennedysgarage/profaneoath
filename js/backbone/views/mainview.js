@@ -20,7 +20,7 @@ $(function() {
     		var $el = $('#container');
 			$el.empty();
 			$el.append(this.render().el);
-			PO.router.navigate(PO.router.urlCreator, {trigger:true});
+			PO.router.navigate(PO.router.urlCreator, {trigger:false});
 		}
 	});
 }());
