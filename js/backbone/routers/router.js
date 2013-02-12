@@ -18,7 +18,7 @@ $(function() {
 			this.mainView.populate();
 		},
 		_handleRoute: function (word) {
-			alert(word);
+			//alert(word);
 		}
 	});
 	PO.router = new PO.CurseRoute();
