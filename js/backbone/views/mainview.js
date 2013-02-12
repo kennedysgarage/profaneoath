@@ -17,6 +17,7 @@ $(function() {
         	$(this.el).html(curseView.render().el);
     	},
     	populate: function() {
+    		console.log(PO.router.urlCreator);
     		console.log(this.collection.at(this.randy));
     		var $el = $('#container');
 			$el.empty();
