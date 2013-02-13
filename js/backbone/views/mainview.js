@@ -17,12 +17,10 @@ $(function() {
         	$(this.el).html(curseView.render().el);
     	},
     	populate: function() {
-    		console.log(PO.router.urlCreator);
-    		console.log(this.collection.at(this.randy));
     		var $el = $('#container');
 			$el.empty();
 			$el.append(this.render().el);
-			PO.router.navigate(PO.router.urlCreator, {trigger:true});
+			//PO.router.navigate(PO.router.urlCreator, {trigger:false});
 		}
 	});
 }());
